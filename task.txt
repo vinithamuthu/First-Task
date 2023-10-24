@@ -1,0 +1,62 @@
+
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+   HTTP1.1 :
+      
+  => HTTP 1 (Hypertext Transfer Protocol version 1) is the original version of the HTTP protocol.
+	=> It is used for communication between web servers and clients, such as web browsers.
+	=> HTTP 1.1 was introduced in 1997.
+
+
+Benefits of HTTP 1.1:
+
+	=> It supports persistent connections, which allow multiple requests and responses to be sent over the same TCP connection.
+	=> It reduce new connection and improving the performance of the protocol.
+	=> It supports pipelining, which allows multiple requests to be sent without waiting for the corresponding responses.
+	=> It introduced several caching features, including the ability to specify cache-control directives.
+	=> It introduced the ability to transfer large amounts of data in chunks, which can improve the efficiency of data transfer and reduce latency.
+	=> It improved error handling, which can help developers troubleshoot and resolve issues more quickly.
+
+Drawbacks of HTTP 1.1:
+
+	=> It only allows a single request and response to be sent over a single connection at a time, which can lead to performance issues when multiple requests are made simultaneously.
+
+
+
+HTTP2 :
+
+	=> A  new version of HTTP called HTTP/2 was created.
+	=> HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate.
+	=> HTTP/2 is much faster and more efficient than HTTP/1.1.
+
+
+Benefits of HTTP2:
+
+	=> Multiplexing offers reduction in number of connections needed and also reduces overhead to open and to close connections. This further reduces latency.
+	=> Binary format offers efficient communication compare to text based communication.
+	=> It helps client and server to load important resources first as per priority. This improves user experience to a greater extent.
+ 	=> HTTP/2 offers quick web page loads due to single connection due to reduction in amount of round trips and number of handshakes.
+
+Drawbacks of HTTP 2:
+
+	=> HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+ 	=> Caching of resources at the client side is a challenge as client does not have control over resources pushed by the server.
+	=> it may not interoperate with some of the existing systems.
+
+
+
+
+2. Write a blog about objects and its internal representation in Javascript.
+
+	=> Objects are important data types in javascript. 
+	=> Objects are different than primitive datatypes.
+	=> Primitive data types contain one value but Objects can hold many values in form of Key: value pair.
+	=> These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+	=> Every object has some property associated with some value. These values can be accessed using these properties associated with them.
+			var myCar = new Object();
+			myCar.make = 'Suzuki';
+			myCar.model = 'Altros';
+			myCar.year = 1978;
+		  myCar.wheels = 2;
+  => After creating myCar object, the value inside the object can be accessed using keys.
+
